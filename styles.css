@@ -1,0 +1,80 @@
+/* generic styles */
+
+body, h1, h2, h3, p, ul, li {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f3e6;
+}
+
+/* form */
+
+.form-account {
+    background-color: white;
+    width:350px;
+    height:50%;
+    margin:40px auto; 
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h1 {
+    font-size: 26px;
+    color:#491877;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+p {
+    font-style:oblique;
+    color:#515151;
+    font-size: 14px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+label {
+    text-transform:uppercase;
+    color:#491877;
+    font-size:14px;
+}
+
+input {
+    margin-top:5px;
+    margin-bottom:20px;
+    display:block;
+    width: 326px;
+    padding:10px 10px;
+}
+
+input:required {
+    border:solid 1px blue;
+}
+
+input[pattern="[0-9]{8}[A-Za-z]{1}"]:invalid {
+    border: solid 1px red;
+  }
+
+button {
+    margin: 30px 50% 20px;
+    border-radius:20px;
+    background-color: #491877;
+    color:white;
+    padding: 10px 30px;
+    border:none;
+    text-transform:uppercase;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+button:active {
+    background-color: black;
+}
